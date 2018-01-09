@@ -5,8 +5,8 @@
 #
 # Problem 2
 #
-# q: 
-# a: 
+# q: Find the sum of all even fibonacci numbers less than 4000000
+# a: 4613732
 #
 
 ans = 0
