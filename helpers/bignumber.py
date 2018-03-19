@@ -21,10 +21,7 @@ class BigNumber:
                 self.number.append(1)
 
     def multiply(self, n):
-        #if self.length() > n.length(): n.extend(self.length())
-        #elif self.length() < n.length(): self.extend(n.length())
         nums = []
-
         carry = 0
         for i in range(0, self.length()):
             num = ''.join((['0']*i))
@@ -44,7 +41,17 @@ class BigNumber:
         this = BigNumber(str(self))
         for i in range(0, n-1):
             self.add(this)
-            
+    def factorial(self, n):
+        while n > 0:
+            self.multiply(n, True)
+            n -= 1
+
+    def sum_digits(self):
+        ans = 0
+        for num in self.number:
+            ans += int(num)
+        return ans
+
     def extend(self, new_length):
         while self.length() < new_length: self.number.append(0)
     def pow(self, n):
