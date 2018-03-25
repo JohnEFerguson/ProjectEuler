@@ -9,7 +9,7 @@
 # a: 906609 
 #
 
-from helpers.is_palindrome import is_palindrome 
+from helpers.palindrome import is_palindrome 
 
 ans = 0
 for i in range(100, 1000):

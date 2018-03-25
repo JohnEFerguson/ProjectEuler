@@ -9,7 +9,7 @@
 # a: 6857
 #
 
-from helpers.is_prime import is_prime
+from helpers.prime import is_prime
 
 NUM = 600851475143
 ans = 0

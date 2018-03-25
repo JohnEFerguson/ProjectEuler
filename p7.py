@@ -9,7 +9,7 @@
 # a: 104743
 #
 
-from helpers.is_prime import is_prime 
+from helpers.prime import is_prime 
 
 NUM = 10001
 

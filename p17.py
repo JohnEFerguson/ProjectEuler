@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 #
-# Jack Ferguson 2017
+# Jack Ferguson 2018
 #
-# Problem 1
+# Problem 17
 #
 # q: Find the number of the characters in the numbers [1,1000] written in english
 # a: 21124

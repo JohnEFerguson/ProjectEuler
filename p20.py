@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 #
-# Jack Ferguson 2017
+# Jack Ferguson 2018
 #
-# Problem 13
+# Problem 20
 #
 # q: Find the sum of the digits in the number 100!
 # a: 648
