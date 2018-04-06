@@ -26,6 +26,12 @@ def get_divisors(n):
             divs.add(n/i)
     return divs
 
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+        
+
 ''' test code
 for i in range(1, 5000):
     if len(get_divisors(i)) != count_divisors(i): print i 
