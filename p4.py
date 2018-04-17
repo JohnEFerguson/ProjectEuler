@@ -9,13 +9,13 @@
 # a: 906609 
 #
 
-from helpers.palindrome import is_palindrome 
+from helpers.palindrome import is_palindrome_int
 
 ans = 0
 for i in range(100, 1000):
     for j in range(100, 1000):
         pos = i * j
-        if pos > ans and is_palindrome(pos):
+        if pos > ans and is_palindrome_int(pos):
             ans = pos 
 
 print "p4: " + str(ans)
