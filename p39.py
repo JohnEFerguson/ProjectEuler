@@ -5,8 +5,8 @@
 #
 # Problem 39 
 #
-# q: 
-# a: 
+# q: Find the number n = a + b + c such that a^2 + b^2 = c^2 has the greatest number of solutions
+# a: 840
 #
 
 sols = {}
@@ -15,8 +15,6 @@ for c in range(1,1000):
     for b in range(1,c):
         if c*c - b*b in sq_difs: sq_difs[c*c - b*b].append([b,c])
         else: sq_difs[c*c - b*b] = [[b,c]]
-
-
 for a in range(0, 1000):
     if a*a in sq_difs:
         for b_c in sq_difs[a*a]: 
