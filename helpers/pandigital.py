@@ -17,3 +17,12 @@ def is_factor_pandigital(n):
         if is_pandigital(digs): return True
     return False
 
+nums = []
+def get_pandigital_nums_helper(so_far, left):
+    if left == '' and so_far[0] != '0': nums.append(so_far)
+    else:
+        for i in range(0, len(left)): get_pandigital_nums_helper(so_far + left[i], left[:i] + left[i+1:])
+
+def get_pandigital_nums(digs):
+    get_pandigital_nums_helper('', digs)
+    return nums

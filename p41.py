@@ -10,17 +10,12 @@
 #
 
 from helpers.prime import is_prime
+from helpers.pandigital import get_pandigital_nums
 
-nums = []
-def get_pandigital_nums(so_far, left):
-    if left == '': nums.append(int(so_far))
-    else:
-        for i in range(0, len(left)): get_pandigital_nums(so_far + left[i], left[:i] + left[i+1:])
-
-get_pandigital_nums('', '1234567') # there are no primes that are 9,8-dig pandigital
+nums = get_pandigital_nums('1234567') # there are no primes that are 9,8-dig pandigital
 
 ans = 0
 for num in nums:
-    if num > ans and is_prime(num): ans = num
+    if int(num) > ans and is_prime(int(num)): ans = int(num)
 print "p41: " + str(ans)
 
