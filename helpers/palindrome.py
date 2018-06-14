@@ -18,4 +18,10 @@ def is_palindrome_str(s):
 def get_dig(n, i):
     return (n/(10**(i-1)))%10
 
-
+def get_palindrome_int(n):
+    pal = 0
+    while n >= 1:
+        pal *= 10
+        pal += n%10
+        n /= 10
+    return pal
